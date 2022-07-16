@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- doctype is required -->
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="descricao da pagina" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>revisão</title>
+    <!-- title is required -->
+  </head>
+  <body>
+    existem diferentes niveis de titulo
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+
+    <em>enfase</em>
+    <strong>mais enfase</strong>
+    <mark>elemento marcado</mark>
+    <i>italico</i>
+    <!-- i is deprecated -->
+    <b>negrito</b>
+    <!-- b is deprecated -->
+    monoespacadas
+    <code>codigo fonte</code>
+    <kbd>keyboard</kbd>
+    <p>
+      paragrafo com <br />
+      quebra de linha
+    </p>
+    <p>subscrito h<sub>2</sub>O</p>
+    <p>sobrescrito x<sup>2</sup></p>
+    <img src="imagem.jpg" alt="alternativo" />
+    <a href="#" target="_blank">blank</a>
+    <!-- _blank new tab -->
+    <a href="#" target="_parent">parent</a>
+    <a href="#" target="_self">self</a>
+    <a href="#" target="_top">top</a>
+    lista nao ordenada
+    <ul>
+      <!-- unordered list -->
+      <li>list item 1</li>
+      <li>list item 2</li>
+    </ul>
+    <ol>
+      <!-- ordered list -->
+      <li>list item 1</li>
+      <li>list item 2</li>
+    </ol>
+    <dl>
+      <!-- definition list -->
+      <dt>titulo da definicao</dt>
+      <!-- definition title -->
+      <dd>descricao da definicao</dd>
+      <dt>titulo</dt>
+      <dd>descricao</dd>
+      <!-- definition description -->
+    </dl>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>produto</th>
+                <th>preco</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>hamburger</td>
+                    <td>15,90</td>
+                </tr>
+                <tr>
+                    <td>refri</td>
+                    <td>6,80</td>
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+    <!-- example with colspan -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>h1</th>
+                <th colspan="2">h2</th>
+
+            </tr>
+            <tr>
+                <th>h3</th>
+                <th>h4</th>
+                <th>h5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">c1</td>
+                <td>c2</td>
+                <td>c3</td>
+            </tr>
+            <tr>
+                <td>c4</td>
+                <td>c5</td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="#">
+        <p>
+            <label for="itext">campo de texto</label>
+            <input name="itext" id="itext" type="text" value="formato padrao input" />
+        </p>
+        <p>
+            <label for="itext1">campo somente leitura</label>
+            <input readonly name="itext1" id="itext1" value="readonly">
+        </p>
+        <p>
+            <label>
+                campo desabilitado
+                <input disabled name="itext2" value="desabilitado">
+            </label>
+        </p>
+        <p>
+            <label>
+                campo numerico
+                <input type="number" value="10" />
+            </label>
+        </p>
+        <p>campo de senha
+            <input type="password" value="1234" />
+        </p>
+        <p>
+            campo data
+            <input type="date" />
+        </p>
+        <p>
+            arquivo
+            <input type="file"/>
+        </p>
+
+        <p>
+            checkbox
+            <label>
+                <input type="checkbox" value="1"/>
+                opcao1
+            </label>
+            <label>
+                <input type="checkbox" value="2"/>
+                opcao2
+            </label>
+        </p>
+
+        <p>
+            radio <!-- the name property value must be equal -->
+            <label>
+                <input name="icheck" type="radio" value="op1"/>
+                opcao 1
+            </label>
+            <label>
+                <input name="icheck" type="radio" value="op2"/>
+                opcao 2
+            </label>
+        </p>
+
+        <p>
+            select simples
+            <select name="select">
+                <option value="v1">valor 1</option>
+                <option value="v2" selected>valor 2</option>
+                <option value="v3">valor 3</option>
+            </select>
+        </p>
+
+        <p>
+            select multiplo
+            <select name="multiplo" multiple>
+                <option value="v1">valor 1</option>
+                <option value="v2" selected>valor 2</option>
+                <option value="v3" selected>valor 3</option>
+            </select>
+        </p>
+
+        <p>
+            <label>
+                area de texto
+                <textarea rows="6" placeholder="area de texto"></textarea>
+            </label>
+        </p>
+
+        <p>
+            <input type="submit" value="submit button"/>
+        </p>
+    </form>
+    <!-- containers -->
+    <span>span</span>
+    <div>div</div>
+    <header>header</header>
+    <footer>footer</footer>
+    <nav>nav</nav>
+    <main>main</main>
+    <aside>aside</aside>
+    <article>article</article>
+    <section>section</section>
+  </body>
+</html>
